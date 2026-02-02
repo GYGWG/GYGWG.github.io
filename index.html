@@ -21,6 +21,35 @@
         font-weight: 700;
         text-decoration: underline;
       }
+      .exp-table {
+        width: 100%;
+        border: 0;
+        border-spacing: 0;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .exp-row td {
+        padding: 10px 20px;
+        vertical-align: top;
+      }
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .exp-org {
+        font-weight: 700;
+        color: #1a5fb4;
+      }
+      .exp-date {
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .exp-role {
+        font-style: italic;
+      }
     </style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -121,16 +150,10 @@
           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr>
-              <td colspan="2" style="padding: 0px 20px 10px 20px; vertical-align: middle;">
-                <h3 style="margin-bottom: 10px; border-bottom: none;">3D/4D/Video Generation</h3>
-              </td>
-            </tr>
-            
             <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
               <td style="padding: 10px 20px; width:25%; vertical-align:top">
                 <div class="one">
-                  <img src='image/LCGen.png' width="160">
+                  <img src='image/AnimaMimic.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
@@ -140,18 +163,18 @@
               </td>
               <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
                 <div style="margin-bottom: 2px;">
-                  <a href="https://openreview.net/pdf?id=4wgzkAyi2D">
-                    <span class="papertitle">LCGen: Mining in Low-Certainty Generation for View-consistent Text-to-3D</span>
+                  <a href="https://arxiv.org/pdf/2512.14133">
+                    <span class="papertitle">AnimaMimic: Imitating 3D Animation from Video Priors</span>
                   </a>
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <strong>Zeng Tao</strong>, Tong Yang, Junxiong Lin, Xinji Mai, Haoran Wang, Beining Wang, Enyu Zhou, Yan Wang, Wenqiang Zhang
+                  Tianyi Xie*, Yunuo Chen*, <strong>Yaowei Guo</strong>*, Yin Yang, Bolei Zhou, Demetri Terzopoulos, Ying Jiang, Chenfanfu Jiang
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <em>NeurIPS</em>, 2024
+                <strong><em>ArXiv</em>, 2025</strong>
                 </div>
                 <div>
-                  <a href="https://openreview.net/pdf?id=4wgzkAyi2D">Paper</a>
+                  <a href="https://arxiv.org/pdf/2512.14133">Paper</a>
                 </div>
               </td>
             </tr>
@@ -159,9 +182,7 @@
             <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
               <td style="padding: 10px 20px; width:25%; vertical-align:top">
                 <div class="one">
-                  <video width="160" autoplay muted loop playsinline>
-                    <source src="image/4DNex.mp4" type="video/mp4">
-                  </video>
+                  <img src='image/CFSum.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
@@ -171,19 +192,18 @@
               </td>
               <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
                 <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/abs/2508.13154">
-                    <span class="papertitle">4DNeX: Feed-Forward 4D Generative Modeling Made Easy.</span>
+                  <a href="https://arxiv.org/pdf/2503.00364">
+                    <span class="papertitle">CFSum: A Transformer-Based Multi-Modal Video Summarization Framework With Coarse-Fine Fusion</span>
                   </a>
                 </div>
                 <div style="margin-bottom: 2px;">
-                  Zhaoxi Chen*, Tianqi Liu*, Long Zhuo*, Jiawei Ren, <strong>Zeng Tao</strong>, He Zhu, Fangzhou Hong, Liang Pan, Ziwei Liu
+                  <strong>Yaowei Guo</strong>, Jiazheng Xing, Xiaojun Hou, Shuo Xin, Juntao Jiang, Demetri Terzopoulos, Chenfanfu Jiang, Yong Liu
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <em>arXiv</em>, 2025
+                  <strong><em>ICASSP</em>, 2025</strong>
                 </div>
                 <div>
-                  <a href="https://arxiv.org/abs/2508.13154">Paper</a> /
-                  <a href="https://4dnex.github.io/">Project Page</a>
+                  <a href="https://arxiv.org/pdf/2503.00364">Paper</a>
                 </div>
               </td>
             </tr>
@@ -191,7 +211,7 @@
             <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
               <td style="padding: 10px 20px; width:25%; vertical-align:top">
                 <div class="one">
-                  <img src='image/C3Editor.png' width="160">
+                  <img src='image/SDSTrack.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
@@ -201,54 +221,18 @@
               </td>
               <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
                 <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/abs/2510.04539">
-                    <span class="papertitle">C3Editor: Achieving Controllable Consistency in 2D Model for 3D Editing.</span>
+                  <a href="https://arxiv.org/pdf/2403.16002">
+                    <span class="papertitle">SDSTrack: Self-Distillation Symmetric Adapter Learning for Multi-Modal Visual Object Tracking</span>
                   </a>
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <strong>Zeng Tao</strong>, Zheng Ding, Zeyuan Chen, Xiang Zhang, Leizhi Li, Zhuowen Tu
+                  Xiaojun Hou, Jiazheng Xing, Yijie Qian, <strong>Yaowei Guo</strong>, Shuo Xin, Junhao Chen, Kai Tang, Mengmeng Wang, Zhengkai Jiang, Liang Liu, Yong Liu
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <em>ICCV Wild3D Workshop</em>, 2025
+                <strong><em>CVPR</em>, 2024</strong>
                 </div>
                 <div>
-                  <a href="https://arxiv.org/abs/2510.04539">Paper</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <td colspan="2" style="padding: 0px 20px 10px 20px; vertical-align: middle;">
-                <h3 style="margin-bottom: 10px; border-bottom: none;">Visual Understanding</h3>
-              </td>
-            </tr>
-
-            <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-              <td style="padding: 10px 20px; width:25%; vertical-align:top">
-                <div class="one">
-                  <img src='image/freq-hd.jpg' width="160">
-                </div>
-                <script type="text/javascript">
-                  function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
-                  function db3d_stop() { document.getElementById('db3d_image').style.opacity = "0"; }
-                  db3d_stop()
-                </script>
-              </td>
-              <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
-                <div style="margin-bottom: 2px;">
-                  <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611972">
-                    <span class="papertitle">Freq-HD: An Interpretable Frequency-based High-Dynamics Affective Clip Selection Method for in-the-Wild Facial Expression Recognition in Videos</span>
-                  </a>
-                </div>
-                <div style="margin-bottom: 2px;">
-                  <strong>Zeng Tao</strong>, Yan Wang, Zhaoyu Chen, Boyang Wang, Shaoqi Yan, Kaixun Jiang, Shuyong Gao, Wenqiang Zhang
-                </div>
-                <div style="margin-bottom: 2px;">
-                  <em>ACM MM</em>, 2023 &nbsp <font color="red"><strong>(Oral)</strong></font>
-                </div>
-                <div>
-                  <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611972">Paper</a> /
-                  <a href="https://github.com/zeng-tao/FreqHD">Github</a>
+                  <a href="https://arxiv.org/pdf/2403.16002">Paper</a>
                 </div>
               </td>
             </tr>
@@ -256,7 +240,7 @@
             <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
               <td style="padding: 10px 20px; width:25%; vertical-align:top">
                 <div class="one">
-                  <img src='image/HiEF.png' width="160">
+                  <img src='image/ShuoXin.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
@@ -266,18 +250,18 @@
               </td>
               <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
                 <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/pdf/2407.16406">
-                    <span class="papertitle">Hi-EF: Benchmarking Emotion Forecasting in Human-interaction.</span>
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10610979">
+                    <span class="papertitle">Multi-Modal 3D Human Tracking for Robots in Complex Environment with Siamese Point-Video Transformer</span>
                   </a>
                 </div>
                 <div style="margin-bottom: 2px;">
-                   Haoran Wang*, Xinji Mai*, <strong>Zeng Tao*</strong>, Junxiong Lin, Xuan Tong, Ivy Pan, Shaoqi Yan, Yan Wang, Shuyong Gao
+                  Shuo Xin, Zhen Zhang, Mengmeng Wang, Xiaojun Hou, <strong>Yaowei Guo</strong>, Xiao Kang, Liang Liu, Yong Liu
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <em>AAAI</em>, 2026
+                <strong><em>ICRA</em>, 2024</strong>
                 </div>
                 <div>
-                  <a href="https://arxiv.org/pdf/2407.16406">Paper</a>
+                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10610979">Paper</a>
                 </div>
               </td>
             </tr>
@@ -285,7 +269,7 @@
             <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
               <td style="padding: 10px 20px; width:25%; vertical-align:top">
                 <div class="one">
-                  <img src='image/align.png' width="160">
+                  <img src='image/Boosting.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
@@ -295,23 +279,52 @@
               </td>
               <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
                 <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/abs/2403.04294">
-                    <span class="papertitle">A3lign-DFER: Pioneering Comprehensive Dynamic Affective Alignment for Dynamic Facial Expression Recognition with CLIP.</span>
+                  <a href="https://arxiv.org/pdf/2308.09346">
+                    <span class="papertitle">Boosting Few-shot Action Recognition with Graph-guided Hybrid Matching</span>
                   </a>
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <strong>Zeng Tao</strong>, Yan Wang, Junxiong Lin, Haoran Wang, Xinji Mai, Jiawen Yu, Xuan Tong, Ziheng Zhou, Shaoqi Yan, Qing Zhao, Liyuan Han, Wenqiang Zhang
+                  Jiazheng Xing, Mengmeng Wang, Yudi Ruan, Bofan Chen, <strong>Yaowei Guo</strong>, Boyu Mu, Guang Dai, Jingdong Wang, Yong Liu
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <em>arXiV</em>, 2024
+                <strong><em>ICCV</em>, 2023</strong>
                 </div>
                 <div>
-                  <a href="https://arxiv.org/abs/2403.04294">Paper</a>
+                  <a href="https://arxiv.org/pdf/2308.09346">Paper</a>
                 </div>
               </td>
             </tr>
 
             <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+              <td style="padding: 10px 20px; width:25%; vertical-align:top">
+                <div class="one">
+                  <img src='image/KG.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
+                  function db3d_stop() { document.getElementById('db3d_image').style.opacity = "0"; }
+                  db3d_stop()
+                </script>
+              </td>
+              <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
+                <div style="margin-bottom: 2px;">
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-20503-3_5">
+                    <span class="papertitle">Stochastic and Dual Adversarial GAN-boosted Zero-Shot Knowledge Graph</span>
+                  </a>
+                </div>
+                <div style="margin-bottom: 2px;">
+                  Xuejiao Liu*, <strong>Yaowei Guo</strong>*, Meiyu Huang, Xueshuang Xiang
+                </div>
+                <div style="margin-bottom: 2px;">
+                <strong><em>CAAI</em>, 2022</strong>
+                </div>
+                <div>
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-20503-3_5">Paper</a>
+                </div>
+              </td>
+            </tr>
+
+            <!-- <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
               <td style="padding: 10px 20px; width:25%; vertical-align:top">
                 <div class="one">
                   <img src='image/D2SP2.png' width="160">
@@ -324,203 +337,56 @@
               </td>
               <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
                 <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/abs/2406.16473">
-                    <span class="papertitle">D2SP: Dynamic Dual-Stage Purification Framework for Dual Noise Mitigation in Vision-based Affective Recognition.</span>
+                  <a href="">
+                    <span class="papertitle">Detecting Fine-grained Airplanes in SAR images with Sparse Attention-guided Pyramid and Class-balanced Data Augmentation</span>
                   </a>
                 </div>
                 <div style="margin-bottom: 2px;">
-                  Haoran Wang, Xinji Mai, <strong>Zeng Tao</strong>, Xuan Tong, Junxiong Lin, Yan Wang, Jiawen Yu, Shaoqi Yan, Ziheng Zhou, Wenqiang Zhang
+                  W Bao, J Hu, M Huang, <strong>Yaowei Guo</strong>, Y Zhang, Y Xu, N Ji, X Xiang
                 </div>
                 <div style="margin-bottom: 2px;">
-                  <em>CVPR</em>, 2025
+                  <em>IEEE JSTARS</em>, 2022
                 </div>
                 <div>
-                  <a href="https://arxiv.org/abs/2406.16473">Paper</a>
+                  <a href="">Paper</a>
                 </div>
               </td>
-            </tr>
-
-            <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-              <td style="padding: 10px 20px; width:25%; vertical-align:top">
-                <div class="one">
-                  <img src='image/SSR2.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
-                  function db3d_stop() { document.getElementById('db3d_image').style.opacity = "0"; }
-                  db3d_stop()
-                </script>
-              </td>
-              <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
-                <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/abs/2403.05808">
-                    <span class="papertitle">Adaptive Multi-modal Fusion of Spatially Variant Kernel Refinement with Diffusion Model for Blind Image Super-Resolution</span>
-                  </a>
-                </div>
-                <div style="margin-bottom: 2px;">
-                  Junxiong Lin, Yan Wang, <strong>Zeng Tao</strong>, Boyang Wang, Qing Zhao, Haoran Wang, Xuan Tong, Xinji Mai, Yuxuan Lin, Wei Song, Jiawen Yu, Shaoqi Yan, Wenqiang Zhang
-                </div>
-                <div style="margin-bottom: 2px;">
-                  <em>ECCV</em>, 2024
-                </div>
-                <div>
-                  <a href="https://arxiv.org/abs/2403.05808">Paper</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-              <td style="padding: 10px 20px; width:25%; vertical-align:top">
-                <div class="one">
-                  <img src='image/Suppressing2.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
-                  function db3d_stop() { document.getElementById('db3d_image').style.opacity = "0"; }
-                  db3d_stop()
-                </script>
-              </td>
-              <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
-                <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/abs/2406.16459">
-                    <span class="papertitle">Suppressing Uncertainties in Degradation Estimation for Blind Super-Resolution</span>
-                  </a>
-                </div>
-                <div style="margin-bottom: 2px;">
-                  Junxiong Lin, <strong>Zeng Tao</strong>, Xuan Tong, Xinji Mai, Haoran Wang, Boyang Wang, Yan Wang, Qing Zhao, Jiawen Yu, Yuxuan Lin, Shaoqi Yan, Shuyong Gao, Wenqiang Zhang
-                </div>
-                <div style="margin-bottom: 2px;">
-                  <em>ACM MM</em>, 2024
-                </div>
-                <div>
-                  <a href="https://arxiv.org/abs/2406.16459">Paper</a>
-                </div>
-              </td>
-            </tr>
-
-            <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-              <td style="padding: 10px 20px; width:25%; vertical-align:top">
-                <div class="one">
-                  <img src='image/all2.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function db3d_start() { document.getElementById('db3d_image').style.opacity = "1"; }
-                  function db3d_stop() { document.getElementById('db3d_image').style.opacity = "0"; }
-                  db3d_stop()
-                </script>
-              </td>
-              <td style="padding: 10px 20px; width:75%; vertical-align:top; line-height: 1.6;">
-                <div style="margin-bottom: 2px;">
-                  <a href="https://arxiv.org/abs/2407.15590">
-                    <span class="papertitle">All rivers run into the sea: Unified Modality Brain-Inspired Emotional Central Mechanism</span>
-                  </a>
-                </div>
-                <div style="margin-bottom: 2px;">
-                  Xinji Mai, Junxiong Lin, Haoran Wang, <strong>Zeng Tao</strong>, Yan Wang, Shaoqi Yan, Xuan Tong, Jiawen Yu, Boyang Wang, Ziheng Zhou, Qing Zhao, Shuyong Gao, Wenqiang Zhang
-                </div>
-                <div style="margin-bottom: 2px;">
-                  <em>ACM MM</em>, 2024 &nbsp <font color="red"><strong>(Oral)</strong></font>
-                </div>
-                <div>
-                  <a href="https://arxiv.org/abs/2407.15590">Paper</a> /
-                  <a href="https://github.com/Xinji-Mai/UMBEnet">Github</a>
-                </div>
-              </td>
-            </tr>
-
-            
-      
-
-
-            
-      
-
-<!--     <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <img src='image/acapture.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function db3d_start() {
-              document.getElementById('db3d_image').style.opacity = "1";
-            }
-
-            function db3d_stop() {
-              document.getElementById('db3d_image').style.opacity = "0";
-            }
-            db3d_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611973">
-            <span class="papertitle">A Capture to Registration Framework for Realistic Image Super-Resolution in the Industry Environment</span>
-          </a>
-          <br>Boyang Wang, Yan Wang, Qing Zhao, Junxiong Lin, <strong>Zeng Tao</strong>, Pinxue Guo, Zhaoyu Chen, Kaixun Jiang, Shaoqi Yan, Shuyong Gao, Wenqiang Zhang
-          <br>
-          <em>ACM MM</em>, 2023
-          <br>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611973">Paper</a>
-          /
-          <a href="https://byw4ng.github.io/IndSR/">Project</a>
-          <p></p>
-        </td>
-      </tr>
-
-      <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <img src='image/exploring.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function db3d_start() {
-              document.getElementById('db3d_image').style.opacity = "1";
-            }
-
-            function db3d_stop() {
-              document.getElementById('db3d_image').style.opacity = "0";
-            }
-            db3d_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611827">
-            <span class="papertitle">Exploring the Adversarial Robustness of Video Object Segmentation via One-shot Adversarial Attacks</span>
-          </a>
-          <br>Kaixun Jiang, Lingyi Hong, Zhaoyu Chen, Pinxue Guo, <strong>Zeng Tao</strong>, Yan Wang, Wenqiang Zhang
-          <br>
-          <em>ACM MM</em>, 2023
-          <br>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611827">Paper</a>
-          <p></p>
-        </td>
-      </tr> -->
-            
-    
-
-
+            </tr> -->
           </tbody></table>
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
                 <h2 class="section-title">Experiences</h2>
-                <p>
-                  <b>China National Scholarship</b> (Undergrads, top 0.2% domestically). 2022.
-                <p>
-                  <b>China National Scholarship</b> (Master's student, top 0.2% domestically). 2024.
-                <p>
-                  <b>Outstanding Graduate of Shanghai</b> (Undergrads, top 5%). 2023.
-                <p>
-                  Outstanding Student Scholarship. 2020 & 2021.
-                <p>
-                  Outstanding Student of Fudan University.
-                <p>
-                  Outstanding Student Leader of Fudan University.
-                </p>  
               </td>
-
             </tr>
+          </tbody></table>
 
+          <table class="exp-table"><tbody>
+            <tr class="exp-row">
+              <td>
+                <div class="exp-header">
+                  <span class="exp-org"><a href="https://april.zju.edu.cn/team/dr-yong-liu/">APRIL Lab, Zhejiang University</a></span>
+                  <span class="exp-date">Sep 2022 – Jul 2024</span>
+                </div>
+                <div class="exp-role">Research Assistant</div>
+                <div>
+                  Advisor: Prof. Yong Liu
+                </div>
+              </td>
+            </tr>
+            <tr class="exp-row">
+              <td>
+                <div class="exp-header">
+                  <span class="exp-org">Qian Lab, Beijing</span>
+                  <span class="exp-date">Jun 2021 – Aug 2022</span>
+                </div>
+                <div class="exp-role">Full time Researcher</div>
+                <div>
+                  Advisor: Dr. Xueshuang Xiang
+                </div>
+              </td>
+            </tr>
           </tbody></table>
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
@@ -528,10 +394,12 @@
               <td>
                 <h2 class="section-title">Teaching</h2>
                 <p>
-                  Conference Reviewer: 
-                  <p>
-                    NeurIPS '24, '25. CVPR: '25. ICCV: '25. ACM MM: '24, '25. AAAI: '26.
-                </p>  
+                  <strong>Teaching Assistant, UCLA</strong>
+                </p>
+                <p style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: -6px;">
+                  <span>CS180: Introduction to Algorithms and Complexity</span>
+                  <span><strong>Fall 2025 - Winter 2026</strong></span>
+                </p>
               </td>
 
             </tr>
@@ -543,14 +411,9 @@
               <td>
                 <h2 class="section-title">Miscellaneous</h2>
                 <p>
-                  🪄 I am driven by a passion to <b>create</b>, <b>organize</b>, and <b>enact change</b>. I served as the General Director for Fudan University's 2021 Campus Singer Competition and founded the Zhangjiang International Brain Bank Student Association.
+                  I enjoy reading history. I believe that “by learning from history, we can understand the rise and fall of nations.” In my spare time, I like playing tennis.
                 </p>
-                <p>
-                  🎹 I have studied playing the piano since childhood and appreciate its pure aesthetics and the feeling of detachment it provides. I have always valued both my <b>sensitivity to the external world</b> and my <b>capacity for deep introspection</b>.
-                </p>  
-                <p>
-                  🏃🏻 Sports and fitness are a core part of my life. I cherish having a strong body and great vitality.
-                </p>
+                
               </td>
 
             </tr>
@@ -562,7 +425,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-              Template from <a href="https://jonbarron.info/">Jon Barron</a>. Thanks so much.
+              <span style="font-size: 10px;">Powered by <a href="https://jonbarron.info/" style="font-size: inherit;">Jon Barron</a> template.</span>
               </p>
             </td>
           </tr>
