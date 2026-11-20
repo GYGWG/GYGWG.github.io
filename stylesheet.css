@@ -51,6 +51,21 @@ h2 {
   position: relative;
 }
 
+.roboedit-overview {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  width: 160px;
+}
+
+.roboedit-overview > span {
+  aspect-ratio: 1200 / 725.4;
+  background-image: url('image/roboedit-figure4-five-rows.webp');
+  background-size: 900% 500%;
+  background-position: calc(var(--col) * 12.5%) calc(var(--row) * 25%);
+  background-repeat: no-repeat;
+}
+
 .two {
   width: 160px;
   height: 160px;
