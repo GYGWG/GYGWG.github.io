@@ -1,11 +1,9 @@
 <div class="news">
   {% assign notices = site.news | where: 'kind', 'notice' | sort: 'importance' %}
   {% assign papers = site.news | where: 'kind', 'paper' | sort: 'event_date' | reverse %}
-  <dl class="news-list news-notices">
-    {% for item in notices %}
-    <div><dt>{{ item.label }}</dt><dd>{{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</dd></div>
-    {% endfor %}
-  </dl>
+  {% for item in notices %}
+  <div class="news-notice">{{ item.content | markdownify }}</div>
+  {% endfor %}
   <dl class="news-list paper-news">
     {% for item in papers limit: 5 %}{% include paper-news-row.html %}{% endfor %}
   </dl>
