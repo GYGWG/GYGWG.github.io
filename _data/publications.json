@@ -1,0 +1,71 @@
+[
+  {
+    "title": "RoboEdit: Turning Human Manipulation Videos into Scalable Robot Experience",
+    "authors": "Yaowei Guo, Zeng Tao, Yuxin Jiang, Yunuo Chen, Zhiyang Dou, Yuxiang Ma, Yin Yang, Demetri Terzopoulos, Ying Jiang, Chenfanfu Jiang",
+    "year": "2026",
+    "venue": "arXiv",
+    "paper": "https://arxiv.org/abs/2608.18948",
+    "project": "https://roboedit.github.io/",
+    "mosaic": true
+  },
+  {
+    "title": "GTA: Generative Tower of Agents for Scalable Holonic Scene Generation",
+    "authors": "Zeng Tao, Yunuo Chen, Xiang Feng, Yumeng He, Peihao Li, Nanxiang Jiang, Yaowei Guo, Fanlian Zeng, Yin Yang, Chenfanfu Jiang",
+    "year": "2026",
+    "venue": "arXiv",
+    "paper": "https://arxiv.org/abs/2611.23727",
+    "project": "https://zt-zeng-tao.github.io/GTA/",
+    "image": "/image/gta-scene-cover.webp"
+  },
+  {
+    "title": "AniMimic: Imitating 3D Animation from Video Priors",
+    "authors": "Tianyi Xie*, Yunuo Chen*, Yaowei Guo*, Yin Yang, Bolei Zhou, Demetri Terzopoulos, Ying Jiang, Chenfanfu Jiang",
+    "year": "2026",
+    "venue": "CVPR",
+    "paper": "https://arxiv.org/pdf/2512.14133",
+    "project": "https://xpandora.github.io/AnimaMimic/",
+    "equal": true,
+    "image": "/image/AnimaMimic.png"
+  },
+  {
+    "title": "CFSum: A Transformer-Based Multi-Modal Video Summarization Framework With Coarse-Fine Fusion",
+    "authors": "Yaowei Guo, Jiazheng Xing, Xiaojun Hou, Shuo Xin, Juntao Jiang, Demetri Terzopoulos, Chenfanfu Jiang, Yong Liu",
+    "year": "2025",
+    "venue": "ICASSP",
+    "paper": "https://arxiv.org/pdf/2503.00364",
+    "image": "/image/CFSum.png"
+  },
+  {
+    "title": "SDSTrack: Self-Distillation Symmetric Adapter Learning for Multi-Modal Visual Object Tracking",
+    "authors": "Xiaojun Hou, Jiazheng Xing, Yijie Qian, Yaowei Guo, Shuo Xin, Junhao Chen, Kai Tang, Mengmeng Wang, Zhengkai Jiang, Liang Liu, Yong Liu",
+    "year": "2024",
+    "venue": "CVPR",
+    "paper": "https://arxiv.org/pdf/2403.16002",
+    "image": "/image/SDSTrack.png"
+  },
+  {
+    "title": "Multi-Modal 3D Human Tracking for Robots in Complex Environment with Siamese Point-Video Transformer",
+    "authors": "Shuo Xin, Zhen Zhang, Mengmeng Wang, Xiaojun Hou, Yaowei Guo, Xiao Kang, Liang Liu, Yong Liu",
+    "year": "2024",
+    "venue": "ICRA",
+    "paper": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10610979",
+    "image": "/image/ShuoXin.png"
+  },
+  {
+    "title": "Boosting Few-shot Action Recognition with Graph-guided Hybrid Matching",
+    "authors": "Jiazheng Xing, Mengmeng Wang, Yudi Ruan, Bofan Chen, Yaowei Guo, Boyu Mu, Guang Dai, Jingdong Wang, Yong Liu",
+    "year": "2023",
+    "venue": "ICCV",
+    "paper": "https://arxiv.org/pdf/2308.09346",
+    "image": "/image/Boosting.png"
+  },
+  {
+    "title": "Stochastic and Dual Adversarial GAN-boosted Zero-Shot Knowledge Graph",
+    "authors": "Xuejiao Liu*, Yaowei Guo*, Meiyu Huang, Xueshuang Xiang",
+    "year": "2022",
+    "venue": "CICAI",
+    "paper": "https://link.springer.com/chapter/10.1007/978-3-031-20503-3_5",
+    "equal": true,
+    "image": "/image/KG.png"
+  }
+]

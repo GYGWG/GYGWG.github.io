@@ -1,0 +1,10 @@
+title: Yaowei Guo
+url: https://gygwg.github.io
+description: Yaowei Guo studies 3D and 4D content creation, computer vision, and embodied AI at UCLA.
+collections:
+  projects:
+    output: false
+  news:
+    output: false
+exclude:
+  - README.md

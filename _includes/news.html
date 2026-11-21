@@ -1,0 +1,8 @@
+<div class="news">
+  <dl class="news-list">
+    {% assign items = site.news | sort: "importance" %}
+    {% for item in items %}
+    <div><dt>{{ item.label }}</dt><dd>{{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</dd></div>
+    {% endfor %}
+  </dl>
+</div>

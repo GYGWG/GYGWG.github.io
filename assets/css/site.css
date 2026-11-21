@@ -1,0 +1,98 @@
+/* Local content and responsive adjustments for al-folio. */
+:root {
+  --global-theme-color: #8c167f;
+  --global-hover-color: #67105e;
+  --ink: #25242a;
+  --muted: #5d5962;
+  --rule: #e1dce2;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 400 1rem/1.58 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.container { width: min(100% - 3rem, 58rem); max-width: none; margin-inline: auto; padding: 0; }
+a { color: var(--global-theme-color); }
+a:hover { color: var(--global-hover-color); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 3px; }
+.skip { position: absolute; left: 1rem; top: -7rem; z-index: 5; background: white; padding: .75rem; }
+.skip:focus { top: .25rem; }
+.site-header { border-bottom: 1px solid var(--rule); }
+.site-nav, .nav-items { display: flex; align-items: center; gap: 1.4rem; }
+.site-nav { justify-content: space-between; min-height: 3.65rem; }
+.brand { color: var(--ink); font-size: 1.14rem; white-space: nowrap; }
+.nav-items a { color: var(--ink); padding: .45rem 0; }
+.nav-items a[aria-current] { color: var(--global-theme-color); box-shadow: inset 0 -2px var(--global-theme-color); }
+.page-content { flex: 1; margin-block: 3.1rem 4.25rem; }
+.post-header { margin-bottom: 1.7rem; }
+h1, h2, h3 { color: var(--ink); line-height: 1.22; }
+h1.post-title { margin: 0 0 .55rem; font-weight: 350; font-size: clamp(2.25rem, 5vw, 3rem); letter-spacing: -.035em; }
+h2 { font-size: 1.65rem; font-weight: 450; margin: 0 0 1rem; }
+p { margin: 0 0 .95rem; }
+.profile-block { display: grid; grid-template-columns: minmax(0,1fr) 12rem; align-items: start; gap: 2.5rem; }
+.profile-block { grid-template-areas: "name portrait" "bio portrait"; row-gap: 1.15rem; }
+.profile-block .post-header { grid-area: name; margin: 0; }
+.profile-block .bio { grid-area: bio; }
+.profile-block .portrait { grid-area: portrait; }
+.section-link { color: var(--ink); }
+.personal-note { margin: 2.1rem 0 0; color: var(--muted); }
+.native-name { color: var(--muted); white-space: nowrap; font: 400 .52em/1.3 "KaiTi", "STKaiti", "Noto Serif CJK SC", serif; letter-spacing: .03em; }
+.desc { color: var(--muted); margin: 0; }
+.portrait { width: 100%; height: auto; border-radius: .3rem; box-shadow: 0 .15rem .55rem #22152b28; }
+.contact-links { display: flex; flex-wrap: wrap; gap: .35rem 1.2rem; margin-top: 1rem; }
+.home-section { clear: both; margin-top: 2.45rem; }
+.news-list, .cv-section dl { margin: 0; }
+.news-list > div, .cv-section dl > div { display: grid; grid-template-columns: 7.4rem minmax(0,1fr); column-gap: 1.1rem; padding: .55rem 0; }
+dt { font-weight: 600; } dd { margin: 0; }
+.news-list dt, .cv-section dt { color: var(--muted); font-size: .9rem; padding-top: .08rem; }
+.projects .row { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.15rem; margin: 0; }
+.projects .row > .col { width: auto; max-width: none; padding: 0; margin: 0; }
+.projects .project-link { display: block; color: inherit; height: 100%; text-decoration: none; }
+.projects .card { padding: 0; height: 100%; overflow: hidden; background: #fff; border: 1px solid var(--rule); border-radius: .35rem; box-shadow: 0 2px 8px #20162612; }
+.projects .project-link:hover .card { box-shadow: 0 4px 14px #20162624; }
+.projects figure.project-media { position: relative; display: grid; place-items: center; aspect-ratio: 1.65; overflow: hidden; margin: 0; border-bottom: 1px solid var(--rule); background: #faf9fa; }
+.projects .project-media img { position: absolute; width: 100%; height: 100%; object-fit: contain; border-radius: 0; }
+.projects .card-body { padding: 1rem; }
+.projects .card-body .card-title { margin: 0 0 .5rem; color: var(--ink); font-size: 1.25rem; font-weight: 600; letter-spacing: -.02em; }
+.projects .project-link:hover .card-title { color: var(--global-theme-color); }
+.projects .card-text { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.roboedit-overview { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 1px; width: 100%; }
+.roboedit-overview > span { aspect-ratio: 1200 / 725.4; background: url('/image/roboedit-figure4-five-rows.webp') no-repeat; background-size: 900% 500%; background-position: calc(var(--col) * 12.5%) calc(var(--row) * 25%); }
+.publications { margin-top: 0; }
+.publications section + section { margin-top: 2rem; }
+.publications .year { text-align: left; border-top: 1px solid var(--rule); padding-top: .8rem; margin: 0 0 .2rem; font-size: 1.4rem; font-weight: 450; color: var(--muted); }
+.publications ol.bibliography { margin: 0; padding: 0; list-style: none; }
+.publications ol.bibliography li.pub-entry { display: grid; grid-template-columns: 9rem minmax(0,1fr); gap: 1.5rem; margin: 0; padding: 1.15rem 0; }
+.pub-media img { display: block; width: 100%; max-height: 7.5rem; object-fit: contain; }
+.publications .pub-entry .title { margin: 0 0 .32rem; font-size: 1.08rem; font-weight: 650; }
+.pub-entry .title a { color: var(--ink); }
+.pub-entry .title a:hover { color: var(--global-theme-color); }
+.pub-entry .author, .pub-entry .periodical { font-size: .94rem; line-height: 1.48; }
+.equal { font-size: .84rem; color: var(--muted); }
+.paper-links { display: flex; gap: .45rem; margin-top: .45rem; }
+.paper-links a { font-size: .88rem; padding: .04rem .55rem; border: 1px solid #ac90a8; border-radius: 3px; }
+.cv-section + .cv-section { border-top: 1px solid var(--rule); padding-top: 1.3rem; margin-top: 1.5rem; }
+.cv-section dl > div { grid-template-columns: 11rem minmax(0,1fr); }
+.cv-section h2 { margin-bottom: .6rem; }
+footer { background: #242127; padding: .8rem 0; color: #ece8ec; font-size: .85rem; }
+footer .container { color: #ece8ec; }
+footer a, footer a:hover { color: #fff; text-decoration: underline; }
+@media (max-width: 700px) {
+  .projects .row { grid-template-columns: 1fr; }
+  .profile-block { grid-template-columns: minmax(0,1fr) 8rem; gap: 1.1rem; }
+  .page-content { margin-block: 2rem 3rem; }
+}
+@media (max-width: 530px) {
+  .container { width: calc(100% - 2rem); }
+  .site-nav { align-items: flex-start; flex-direction: column; gap: .12rem; padding-block: .65rem .35rem; }
+  .nav-items { flex-wrap: wrap; gap: 1.05rem; }
+  .profile-block { grid-template-columns: minmax(0,1fr) 4.8rem; grid-template-areas: "name portrait" "bio bio"; gap: 1rem; }
+  .news-list > div, .cv-section dl > div { grid-template-columns: 1fr; gap: .1rem; }
+  .publications ol.bibliography li.pub-entry { grid-template-columns: 4.6rem minmax(0,1fr); gap: .8rem; }
+}

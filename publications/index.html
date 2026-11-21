@@ -1,0 +1,33 @@
+---
+layout: default
+title: Publications
+tab: Publications
+description: Papers by Yaowei Guo and collaborators, grouped by publication year.
+---
+<header class="post-header"><h1 class="post-title">Publications</h1></header>
+<div class="publications">
+  {% assign groups = site.data.publications | group_by: "year" %}
+  {% for group in groups %}
+  <section aria-labelledby="y{{ group.name }}">
+    <h2 class="year" id="y{{ group.name }}">{{ group.name }}</h2>
+    <ol class="bibliography">
+      {% for paper in group.items %}
+      <li class="pub-entry">
+        <div class="pub-media">
+          {% if paper.mosaic %}{% include roboedit.html %}{% else %}
+          <img src="{{ paper.image }}" alt="" loading="lazy">
+          {% endif %}
+        </div>
+        <div>
+          <h3 class="title"><a href="{{ paper.paper | escape }}">{{ paper.title | escape }}</a></h3>
+          <div class="author">{{ paper.authors | escape | replace: 'Yaowei Guo', '<strong>Yaowei Guo</strong>' }}</div>
+          <div class="periodical"><em>{{ paper.venue | escape }}</em></div>
+          {% if paper.equal %}<div class="equal">* Equal contribution</div>{% endif %}
+          <div class="paper-links"><a href="{{ paper.paper | escape }}">Paper</a>{% if paper.project %}<a href="{{ paper.project }}">Project</a>{% endif %}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</div>

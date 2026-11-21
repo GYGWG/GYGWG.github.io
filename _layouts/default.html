@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="{{ site.title }}">
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <title>{% if page.tab != 'About' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a href="#content" class="skip">Skip to content</a>
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="brand" href="/"><strong>Yaowei</strong> Guo</a>
+      <div class="nav-items">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.path }}"{% if item.name == page.tab %} aria-current="page"{% endif %}>{{ item.name }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+  </header>
+  <main class="container post page-content" id="content">
+    {{ content }}
+  </main>
+  <footer><div class="container">© {{ site.time | date: '%Y' }} Yaowei Guo · Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</div></footer>
+  <script async data-id="101441218" src="https://static.getclicky.com/js"></script>
+</body>
+</html>
