@@ -50,7 +50,6 @@ p { margin: 0 0 .95rem; }
 .cv-section dd { grid-area: entry; }
 .affiliations dd { display: grid; grid-template-columns: 3.75rem minmax(0,1fr); gap: .85rem; align-items: center; }
 .affiliations img { display: block; width: 100%; height: auto; }
-.affiliations .ucla-wordmark { padding: .42rem .46rem; background: #2774ae; }
 dt { font-weight: 600; } dd { margin: 0; }
 .news { font-size: 1rem; line-height: 1.55; }
 .news-list { display: grid; row-gap: .5rem; margin: 0; }
