@@ -46,7 +46,8 @@ p { margin: 0 0 .95rem; }
 .contact-links { display: flex; flex-wrap: wrap; gap: .35rem 1.2rem; margin-top: 1rem; }
 .home-section, .cv-section + .cv-section { clear: both; margin-top: 2.45rem; }
 .cv-section dl { margin: 0; }
-.cv-section dl > div { display: grid; grid-template-columns: 11rem minmax(0,1fr); column-gap: 1.1rem; padding: .55rem 0; }
+.cv-section dl > div { display: grid; grid-template-columns: minmax(0,1fr) 11rem; grid-template-areas: "entry date"; column-gap: 1.1rem; padding: .55rem 0; }
+.cv-section dd { grid-area: entry; }
 .affiliations dd { display: grid; grid-template-columns: 3.75rem minmax(0,1fr); gap: .85rem; align-items: center; }
 .affiliations img { display: block; width: 100%; height: auto; }
 .affiliations .ucla-wordmark { padding: .42rem .46rem; background: #2774ae; }
@@ -79,7 +80,7 @@ dt { font-weight: 600; } dd { margin: 0; }
 .news-archive .when-open, .news-archive[open] .when-closed { display: none; }
 .news-archive[open] .when-open { display: inline; }
 .news-archive summary:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 3px; }
-.cv-section dt { color: var(--muted); font-size: .9rem; padding-top: .08rem; }
+.cv-section dt { grid-area: date; text-align: right; color: var(--muted); font-size: .9rem; padding-top: .08rem; }
 .projects .row { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.15rem; margin: 0; }
 .projects .row > .col { width: auto; max-width: none; padding: 0; margin: 0; }
 .projects .project-link { display: block; color: inherit; height: 100%; text-decoration: none; }
@@ -119,7 +120,8 @@ footer a, footer a:hover { color: #fff; text-decoration: underline; }
   .site-nav { align-items: flex-start; flex-direction: column; gap: .12rem; padding-block: .65rem .35rem; }
   .nav-items { flex-wrap: wrap; gap: 1.05rem; }
   .profile-block { gap: 1rem; }
-  .cv-section dl > div { grid-template-columns: 1fr; gap: .1rem; }
-  .affiliations dd { grid-template-columns: 3rem minmax(0,1fr); gap: .7rem; }
+  .cv-section dl > div { grid-template-columns: minmax(0,1fr) 27%; column-gap: .6rem; }
+  .cv-section dt { text-wrap: balance; }
+  .affiliations dd { grid-template-columns: clamp(2.25rem, 11vw, 3rem) minmax(0,1fr); gap: .6rem; }
   .publications ol.bibliography li.pub-entry { grid-template-columns: 4.6rem minmax(0,1fr); gap: .8rem; }
 }
