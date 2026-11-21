@@ -1,0 +1,4 @@
+<div>
+  <dt><time datetime="{{ item.event_date }}">{% if item.event_date.size == 7 %}{{ item.event_date | append: '-01' | date: '%b %Y' }}{% else %}{{ item.event_date | date: '%b %d, %Y' }}{% endif %}</time></dt>
+  <dd>{{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</dd>
+</div>

@@ -1,17 +1,17 @@
 <div class="news">
   {% assign notices = site.news | where: 'kind', 'notice' | sort: 'importance' %}
-  {% assign papers = site.news | where: 'kind', 'paper' | sort: 'event_date' | reverse %}
+  {% assign events = site.news | where_exp: 'item', 'item.event_date' | sort: 'event_date' | reverse %}
   {% for item in notices %}
   <div class="news-notice">{{ item.content | markdownify }}</div>
   {% endfor %}
-  <dl class="news-list paper-news">
-    {% for item in papers limit: 5 %}{% include paper-news-row.html %}{% endfor %}
+  <dl class="news-list">
+    {% for item in events limit: 5 %}{% include news-row.html %}{% endfor %}
   </dl>
-  {% if papers.size > 5 %}
+  {% if events.size > 5 %}
   <details class="news-archive">
-    <summary><span class="when-closed">Show older news ({{ papers.size | minus: 5 }})</span><span class="when-open">Hide older news</span></summary>
-    <dl class="news-list paper-news">
-      {% for item in papers offset: 5 %}{% include paper-news-row.html %}{% endfor %}
+    <summary><span class="when-closed">Show older news ({{ events.size | minus: 5 }})</span><span class="when-open">Hide older news</span></summary>
+    <dl class="news-list">
+      {% for item in events offset: 5 %}{% include news-row.html %}{% endfor %}
     </dl>
   </details>
   {% endif %}
