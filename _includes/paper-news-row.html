@@ -1,0 +1,4 @@
+<div>
+  <dt><time datetime="{{ item.event_date }}">{{ item.event_date | date: '%b %d, %Y' }}</time></dt>
+  <dd>{{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</dd>
+</div>

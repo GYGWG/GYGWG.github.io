@@ -1,5 +1,5 @@
 ---
-label: Aug 2026
-importance: 4
+kind: paper
+event_date: '2026-08-19'
 ---
-We released [RoboEdit](https://roboedit.github.io/), a method for turning human manipulation videos into robot demonstrations.
+[RoboEdit](https://roboedit.github.io/), our method for turning human manipulation videos into robot demonstrations, is on [arXiv](https://arxiv.org/abs/2608.18948).
