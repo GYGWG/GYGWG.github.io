@@ -1,11 +1,12 @@
 [
   {
-    "title": "RoboEdit: Turning Human Manipulation Videos into Scalable Robot Experience",
-    "authors": "Yaowei Guo, Zeng Tao, Yuxin Jiang, Yunuo Chen, Zhiyang Dou, Yuxiang Ma, Yin Yang, Demetri Terzopoulos, Ying Jiang, Chenfanfu Jiang",
+    "title": "RoboEdit: Turning Human Videos into Scalable Robot Training Data",
+    "authors": "Yaowei Guo*, Zhiyang Dou*, Zeng Tao, Yuxin Jiang, Yunuo Chen, Yuxiang Ma, Yin Yang, Demetri Terzopoulos, Ying Jiang, Chenfanfu Jiang",
     "year": "2026",
     "venue": "arXiv",
     "paper": "https://arxiv.org/abs/2608.18948",
     "project": "https://roboedit.github.io/",
+    "equal": true,
     "mosaic": true
   },
   {
